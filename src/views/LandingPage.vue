@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <HeroSection />
 
-    <!-- Floating WhatsApp Button -->
+    <!-- Tombol WhatsApp -->
     <div>
       <button
         @click="toggleChat"
@@ -59,38 +59,40 @@
         </h2>
 
         <!-- Grid Produk -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
           <!-- Card Produk -->
-          <div
+          <router-link
             v-for="(product, index) in products"
             :key="index"
-            class="group bg-white rounded-2xl shadow-md hover:shadow-lg transition-all border border-gray-100 hover:border-green-400 overflow-hidden"
+            :to="product.link"
+            class="group bg-white rounded-2xl shadow-md hover:shadow-lg transition-all border border-gray-100 hover:border-green-400 overflow-hidden flex flex-col h-full cursor-pointer"
           >
-            <div class="flex flex-col h-full">
-              <!-- Gambar Produk -->
+            <!-- Gambar Produk -->
+            <div class="bg-blue-50 p-6 flex justify-center items-center h-52">
               <div class="bg-blue-100 p-6 flex justify-center items-center">
                 <img
                   :src="product.img"
                   :alt="product.title"
-                  class="w-full max-w-[250px] h-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                   class="object-contain w-auto h-full max-h-36 md:max-h-44 transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
 
-              <!-- Konten Produk -->
-              <div class="p-6 flex flex-col justify-between flex-grow text-left">
-                <div>
-                  <h3
-                    class="text-lg font-semibold text-gray-800 mb-2 group-hover:text-green-600 transition-colors"
-                  >
-                    {{ product.title }}
-                  </h3>
-                  <p class="text-gray-800 mb-2 text-sm leading-relaxed">
-                    {{ product.desc }}
-                  </p>
-                </div>
+            </div>
+            
 
+            <!-- Konten Produk -->
+            <div class="p-6 flex flex-col justify-between flex-grow text-left">
+              <div>
+                <h3
+                  class="text-lg font-semibold text-gray-800 mb-2 group-hover:text-green-600 transition-colors"
+                >
+                  {{ product.title }}
+                </h3>
+                <p class="text-gray-600 mb-3 text-sm leading-relaxed">
+                  {{ product.desc }}
+                </p>
                 <ul
-                  class="text-gray-800 text-sm list-disc list-inside space-y-1 pl-2 group-hover:text-blue-600 transition-colors"
+                  class="text-gray-700 text-sm list-disc list-inside space-y-1 pl-2 group-hover:text-blue-600 transition-colors"
                 >
                   <li
                     v-for="(item, i) in product.features"
@@ -100,17 +102,13 @@
                     {{ item }}
                   </li>
                 </ul>
+              </div>
 
-                <!-- Router Link Detail -->
-                <router-link
-                  :to="product.link"
-                  class="mt-4 text-green-600 font-semibold flex items-center gap-1 group-hover:gap-2 transition-all hover:text-green-700"
-                >
-                  Detail Aplikasi →
-                </router-link>
+              <div class="mt-4 text-green-600 font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                Detail Aplikasi →
               </div>
             </div>
-          </div>
+          </router-link>
           <!-- Akhir Card -->
         </div>
       </div>
@@ -141,15 +139,39 @@ const whatsappLink = computed(() => {
 const products = [
   {
     title: "Aplikasi Perpajakan Daerah",
-    desc: "Aplikasi e-Tax pemerintah membantu pengelolaan pajak dan retribusi daerah secara digital, meningkatkan efisiensi, transparansi, dan pelayanan publik.",
+    desc: "Aplikasi e-Tax pemerintah membantu pengelolaan pajak dan retribusi daerah secara digital, meningkatkan efisiensi dan transparansi.",
     img: new URL("@/assets/img/banner.png", import.meta.url).href,
-    link: "/produk", // pastikan ini sesuai dengan path di router/index.js
+    link: "/produk",
+    features: ["BPHTB Online", "Dashboard Pajak Daerah", "SIPPADU", "SMART PBB"],
+  },
+  {
+    title: "Integrasi API & Gateway",
+    desc: "Integrasi antar sistem pemerintahan dan bank melalui API terstandar (REST, SOAP, OpenAPI).",
+    img: "https://cdn-icons-png.flaticon.com/512/4248/4248443.png",
+    link: "/api-gateway",
     features: [
-      "BPHTB Online",
-      "Dashboard realisasi pajak daerah online",
-      "SIPPADU",
-      "SMART PBB",
+      "API Gateway & Webhook",
+      "OAuth2 & Token Authentication",
+      "Dokumentasi OpenAPI",
     ],
+  },
+  {
+    title: "Host-to-Host dengan Bank",
+    desc: "Bridging antara sistem pajak daerah dengan perbankan untuk pembayaran, verifikasi, dan rekonsiliasi otomatis.",
+    img: "https://cdn-icons-png.flaticon.com/512/9526/9526122.png",
+    link: "/host-to-host",
+    features: [
+      "Koneksi SFTP & API Realtime",
+      "Enkripsi & Sertifikasi Digital",
+      "Rekonsiliasi Otomatis",
+    ],
+  },
+  {
+    title: "Keamanan & Kepatuhan",
+    desc: "Menjamin keamanan transaksi dan kepatuhan terhadap regulasi perbankan dan pemerintahan.",
+    img: "https://cdn-icons-png.flaticon.com/512/747/747376.png",
+    link: "/security",
+    features: ["Enkripsi end-to-end", "Audit trail lengkap", "Sertifikasi & Compliance"],
   },
 ];
 </script>

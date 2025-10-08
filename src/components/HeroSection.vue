@@ -26,12 +26,12 @@
         <span
           class="hidden md:block text-5xl text-blue-700 whitespace-nowrap"
         >
-          Solusi Digital Perpajakan Modern
+          Solusi Digital Perpajakan Daerah
         </span>
         <span
           class="hidden md:block text-5xl text-green-600"
         >
-          Aplikasi Pajak Daerah
+          Aplikasi Pajak Modern
         </span>
       </h1>
 

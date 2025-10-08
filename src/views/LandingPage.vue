@@ -69,14 +69,13 @@
           >
             <!-- Gambar Produk -->
             <div class="bg-blue-50 p-6 flex justify-center items-center h-52">
-              <div class="bg-blue-100 p-6 flex justify-center items-center">
+              <div class="bg-blue-50 flex justify-center items-center h-48 overflow-hidden">
                 <img
                   :src="product.img"
                   :alt="product.title"
-                   class="object-contain w-auto h-full max-h-36 md:max-h-44 transition-transform duration-300 group-hover:scale-105"
+                  class="object-contain w-auto h-full max-h-40 transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-
             </div>
             
 

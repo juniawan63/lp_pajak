@@ -40,7 +40,7 @@
         <img
           :src="heroImage"
           alt="Mockup Aplikasi Pajak"
-          class="w-full max-w-xs sm:max-w-md md:max-w-2xl object-contain drop-shadow-2xl animate-fadeInUp"
+          class="w-full max-w-xs sm:max-w-md md:max-w-md object-contain drop-shadow-2xl animate-fadeInUp"
         />
         <div
           class="absolute -z-10 bg-green-200 rounded-full w-72 h-72 blur-3xl opacity-30 top-10 right-10 animate-pulse"
@@ -58,7 +58,7 @@
       <!-- Tombol CTA -->
       <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
         <a
-          href="#produk"
+          href="/deskripsi"
           class="bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-3 rounded-xl shadow-md transition-all duration-300"
         >
           Pelajari Lebih Lanjut

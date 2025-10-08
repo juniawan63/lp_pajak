@@ -1,0 +1,21 @@
+<template>
+  <LandingPage />
+  
+</template>
+
+
+
+<script setup>
+import LandingPage from "./views/LandingPage.vue";
+
+</script>
+<style>
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: white;
+}
+</style>

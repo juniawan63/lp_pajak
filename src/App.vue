@@ -1,12 +1,11 @@
 <template>
-  <LandingPage />
+  <RouterView />
   
 </template>
 
 
 
 <script setup>
-import LandingPage from "./views/LandingPage.vue";
 
 </script>
 <style>

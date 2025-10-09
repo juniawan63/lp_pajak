@@ -50,7 +50,7 @@
     <!-- Product Section -->
     <section class="w-full py-20">
       <div class="max-w-7xl mx-auto px-6 sm:px-8">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-green-600 mb-14">
+        <h2 class="text-3xl md:text-4xl font-bold text-left text-green-600 mb-14">
           Layanan Kami
         </h2>
 

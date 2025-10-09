@@ -58,16 +58,16 @@
           Layanan Kami
         </h2>
 
-        <!-- Grid Produk -->
+        
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
-          <!-- Card Produk -->
+          
           <router-link
             v-for="(product, index) in products"
             :key="index"
             :to="product.link"
             class="group bg-white rounded-2xl shadow-md hover:shadow-lg transition-all border border-gray-100 hover:border-green-400 overflow-hidden flex flex-col h-full cursor-pointer"
           >
-            <!-- Gambar Produk -->
+            
             <div class="bg-blue-50 p-6 flex justify-center items-center h-52">
               <div class="bg-blue-50 flex justify-center items-center h-48 overflow-hidden">
                 <img
@@ -79,7 +79,7 @@
             </div>
             
 
-            <!-- Konten Produk -->
+            
             <div class="p-6 flex flex-col justify-between flex-grow text-left">
               <div>
                 <h3
@@ -108,7 +108,6 @@
               </div>
             </div>
           </router-link>
-          <!-- Akhir Card -->
         </div>
       </div>
     </section>

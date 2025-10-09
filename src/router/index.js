@@ -4,6 +4,9 @@ const routes = [
   { path: "/", name: "Home", component: () => import("@/views/LandingPage.vue")},
   { path: "/produk", name: "Produk", component: () => import("@/views/Produk.vue")},
   { path: "/deskripsi", name: "Detail", component: () => import("@/views/Deskripsi.vue")},
+  { path: "/api-gateway", name: "Api-Gateway", component: () => import("@/views/Api.vue")},
+  { path: "/host-to-host", name: "Host-to-Host", component: () => import("@/views/Hthb.vue")},
+  { path: "/security", name: "Security", component: () => import("@/views/Security.vue")},
 ];
 
 const router = createRouter({

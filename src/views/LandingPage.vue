@@ -54,22 +54,19 @@
     <!-- Product Section -->
     <section class="w-full py-20">
       <div class="max-w-7xl mx-auto px-6 sm:px-8">
-        <h2 class="text-3xl md:text-4xl font-bold text-left text-green-600 mb-14">
+        <h2 class="text-3xl md:text-4xl font-bold text-left text-[#0057B7] mb-14">
           Layanan Kami
         </h2>
 
-        
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
-          
           <router-link
             v-for="(product, index) in products"
             :key="index"
             :to="product.link"
             class="group bg-white rounded-2xl shadow-md hover:shadow-lg transition-all border border-gray-100 hover:border-green-400 overflow-hidden flex flex-col h-full cursor-pointer"
           >
-            
-            <div class="bg-blue-50 p-6 flex justify-center items-center h-52">
-              <div class="bg-blue-50 flex justify-center items-center h-48 overflow-hidden">
+            <div class="bg-[#0057B7] p-6 flex justify-center items-center h-52">
+              <div class="bg-[#0057B7] flex justify-center items-center h-48 overflow-hidden">
                 <img
                   :src="product.img"
                   :alt="product.title"
@@ -77,36 +74,39 @@
                 />
               </div>
             </div>
-            
 
-            
             <div class="p-6 flex flex-col justify-between flex-grow text-left">
               <div>
                 <h3
-                  class="text-lg font-semibold text-gray-800 mb-2 group-hover:text-green-600 transition-colors"
+                  class="text-lg font-semibold text-[#0057B7] mb-2 group-hover:text-[#FAB715] transition-colors"
                 >
                   {{ product.title }}
                 </h3>
-                <p class="text-gray-600 mb-3 text-sm leading-relaxed">
+
+                <p class="text-gray-500 mb-3 text-sm leading-relaxed">
                   {{ product.desc }}
                 </p>
+
                 <ul
-                  class="text-gray-700 text-sm list-disc list-inside space-y-1 pl-2 group-hover:text-blue-600 transition-colors"
+                  class="text-gray-600 text-sm list-disc list-inside space-y-1 pl-2 group-hover:text-gray-800 transition-colors"
                 >
                   <li
                     v-for="(item, i) in product.features"
                     :key="i"
-                    class="hover:text-gray-950 transition-colors"
+                    class="hover:text-gray-900 transition-colors"
                   >
                     {{ item }}
                   </li>
                 </ul>
               </div>
 
-              <div class="mt-4 text-green-600 font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+              <div
+                class="mt-5 text-sm font-medium text-gray-700 flex items-center gap-1 group-hover:gap-2 transition-all group-hover:text-gray-900"
+              >
                 Detail Aplikasi →
               </div>
             </div>
+
           </router-link>
         </div>
       </div>

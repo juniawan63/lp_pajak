@@ -13,7 +13,7 @@
     <p class="text-gray-600 text-sm mb-4">
       {{ product.desc }}
     </p>
-    <a href="#" class="text-green-600 font-medium hover:underline">
+    <a href="#" class="text-[#0057B7] font-medium hover:underline">
       Selengkapnya →
     </a>
   </div>

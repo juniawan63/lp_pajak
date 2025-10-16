@@ -7,7 +7,7 @@
     <div>
       <button
         @click="toggleChat"
-        class="fixed bottom-6 right-6 bg-[#0057B7] hover:bg-[#004a9e] text-white px-4 py-3 rounded-full flex items-center shadow-lg gap-2 transition-all z-50"
+      class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full flex items-center shadow-lg gap-2 transition-all z-50"
       >
         <i class="fab fa-whatsapp text-xl"></i>
         <span class="hidden md:inline">Halo, bisa kami bantu...?</span>
@@ -19,7 +19,7 @@
           v-if="isOpen"
           class="fixed bottom-20 right-6 bg-white rounded-xl shadow-2xl w-72 overflow-hidden border border-gray-200 z-50"
         >
-          <div class="bg-[#0057B7] text-white p-3 flex justify-between items-center">
+           <div class="bg-green-500 text-white p-3 flex justify-between items-center">
             <p class="text-sm font-medium">Tim kami siap membantu Anda</p>
             <button
               @click="toggleChat"
@@ -41,10 +41,10 @@
               alt="Admin"
               class="w-12 h-12 rounded-full object-cover flex-shrink-0"
             />
-            <div class="flex-1 text-left">
+           <div class="flex-1 text-left">
               <h3 class="font-semibold text-gray-800 leading-tight">Admin</h3>
               <p class="text-sm text-gray-500 -mt-0.5">Tim Pajak Online</p>
-              <p class="text-xs text-[#0057B7] font-medium mt-1">Online Sekarang</p>
+              <p class="text-xs text-green-500 font-medium mt-1">Online Sekarang</p>
             </div>
           </a>
         </div>

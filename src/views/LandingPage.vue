@@ -2,7 +2,7 @@
   <div class="relative bg-gradient-to-b from-blue-50 via-white to-green-50 text-gray-800 font-sans min-h-screen">
     <!-- Hero Section -->
     <HeroSection />
-
+<logo/>
     <!-- Tombol WhatsApp -->
     <div>
       <button
@@ -121,6 +121,7 @@
 import { ref, computed } from "vue";
 import HeroSection from "@/components/HeroSection.vue";
 import FooterSection from "@/components/FooterSection.vue";
+import Logo from "@/components/Logo.vue";
 
 // Pop-up chat
 const isOpen = ref(false);

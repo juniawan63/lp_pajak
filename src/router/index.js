@@ -7,6 +7,11 @@ const routes = [
   { path: "/api-gateway", name: "Api-Gateway", component: () => import("@/views/Api.vue")},
   { path: "/host-to-host", name: "Host-to-Host", component: () => import("@/views/Hthb.vue")},
   { path: "/security", name: "Security", component: () => import("@/views/Security.vue")},
+   { path: "/smart-pbb", name: "SmartPbb", component: () => import("@/views/SmartPbb.vue")},
+   { path: "/bphtb-online", name: "BPHTB", component: () => import("@/views/BPHTB.vue")},
+   { path: "/siapdol", name: "SIAPDOL", component: () => import("@/views/SIAPDOL.vue")},
+{ path: "/sippadu", name: "SIPPADU", component: () => import("@/views/SIPPADU.vue")},
+  
 ];
 
 const router = createRouter({

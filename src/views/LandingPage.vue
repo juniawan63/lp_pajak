@@ -146,7 +146,7 @@ const products = [
   {
     title: "Integrasi API & Gateway",
     desc: "Integrasi antar sistem pemerintahan dan bank melalui API terstandar (REST, SOAP, OpenAPI).",
-    img: "https://cdn-icons-png.flaticon.com/512/4248/4248443.png",
+    img:  new URL("@/assets/img/gateway.png", import.meta.url).href,
     link: "/api-gateway",
     features: [
       "API Gateway & Webhook",

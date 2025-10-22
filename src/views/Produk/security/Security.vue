@@ -11,8 +11,7 @@
     <div
       class="absolute bottom-0 right-0 w-[30%] h-[220px] bg-[#FAB715] rounded-tl-[120px] shadow-xl opacity-90"
     ></div>
-
-    <!-- Judul -->
+    
     <!-- Mobile -->
     <h1
       class="block md:hidden text-2xl sm:text-3xl text-white font-extrabold text-center relative z-10 mt-14"
@@ -28,7 +27,7 @@
       <h1
         class="font-extrabold text-xl sm:text-4xl md:text-5xl text-[#005787] tracking-tight drop-shadow-sm"
       >
-        BPHTB Online
+        Sistem Keamanan & Kepatuhan
       </h1>
     </div>
 

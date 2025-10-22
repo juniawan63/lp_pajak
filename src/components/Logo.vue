@@ -1,37 +1,36 @@
 <template>
   <section
-    class="bg-gradient-to-t from-sky-50 to-white py-24 overflow-hidden"
-    data-aos="fade-up"
-  >
-
-      <!-- Wrapper slider -->
-      <div class="relative w-full h-[350px] overflow-hidden">
-        <div class="relative w-full h-full">
+    class="bg-white mt-12 mb-12 overflow-hidden"
+    data-aos="fade-left">
+    <p class="text-gray-800 font-bold text-2xl py-10">Kerjasama & Testimoni</p>
+    <!-- Wrapper slider -->
+    <div class="relative w-full h-[280px] overflow-hidden">
+      <div class="relative w-full h-full">
           <div
             class="absolute top-0 left-0 w-full h-full flex transition-transform duration-1500 ease-in-out"
             :style="{ transform: `translateX(-${currentGroup * 100}%)` }"
           >
-            <!-- Setiap grup 3 instansi -->
+          <!-- Setiap grup 3 instansi -->
+          <div
+            v-for="(group, gi) in groups"
+            :key="gi"
+            class="flex w-full justify-center gap-12 flex-shrink-0"
+          >
             <div
-              v-for="(group, gi) in groups"
-              :key="gi"
-              class="flex w-full justify-center gap-12 flex-shrink-0"
+              v-for="(client, i) in group"
+              :key="`${client.name}-${i}`"
+              class="flex flex-col items-center space-y-4 animate-float"
             >
-              <div
-                v-for="(client, i) in group"
-                :key="`${client.name}-${i}`"
-                class="flex flex-col items-center space-y-4 animate-float"
-              >
-                <img
-                  :src="client.img"
-                  :alt="client.name"
-                  class="h-20 opacity-85 hover:opacity-100 hover:scale-110 transition-transform duration-300"
-                />
-                <p class="text-gray-800 font-semibold text-lg">{{ client.name }}</p>
-                <p class="text-gray-500 text-sm leading-relaxed max-w-xs">
-                  {{ client.desc }}
-                </p>
-              </div>
+              <img
+                :src="client.img"
+                :alt="client.name"
+                class="h-20 opacity-85 hover:opacity-100 hover:scale-110 transition-transform duration-300"
+              />
+              <p class="text-gray-800 font-semibold text-lg">{{ client.name }}</p>
+              <p class="text-gray-500 text-sm leading-relaxed max-w-xs">
+                {{ client.desc }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -79,7 +78,6 @@ const clients = [
   },
 ];
 
-// Bagi menjadi grup per 3 instansi
 const groupSize = 3;
 const groups = computed(() => {
   const res = [];
@@ -102,17 +100,17 @@ onBeforeUnmount(() => clearInterval(intervalId));
 </script>
 
 <style scoped>
-/* Animasi float logo */
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
-  100% { transform: translateY(0px); }
+  0% { transform: translateX(0px); }
+  50% { transform: translateX(-8px); }
+  100% { transform: translateX(0px); }
 }
+
 .animate-float {
   animation: float 10s ease-in-out infinite;
 }
+
 .relative > div {
   transition: transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
-
 </style>

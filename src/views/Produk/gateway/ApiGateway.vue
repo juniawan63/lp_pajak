@@ -11,13 +11,12 @@
     <div
       class="absolute bottom-0 right-0 w-[30%] h-[220px] bg-[#FAB715] rounded-tl-[120px] shadow-xl opacity-90"
     ></div>
-
-    <!-- Judul -->
+    
     <!-- Mobile -->
     <h1
       class="block md:hidden text-2xl sm:text-3xl text-white font-extrabold text-center relative z-10 mt-14"
     >
-      Smart PBB
+      BPHTB Online
     </h1>
 
     <!-- Desktop -->
@@ -28,7 +27,7 @@
       <h1
         class="font-extrabold text-xl sm:text-4xl md:text-5xl text-[#005787] tracking-tight drop-shadow-sm"
       >
-        Smart PBB
+        BPHTB Online
       </h1>
     </div>
 
@@ -58,14 +57,14 @@
         <p
           class="text-gray-100 text-lg md:text-xl leading-relaxed max-w-md md:max-w-lg drop-shadow-sm"
         >
-         Aplikasi SMART PBB adalah sistem informasi pengelolaan pajak bumi dan bangunan untuk memfasilitasi Instansi pengelola pajak bumi bangunan (PBB) aplikasi ini merupakan solusi untuk mendukung kegiatan pengelolaan dan pelayanan pajak bumi dan bangunan. 
+         Aplikasi BPHTB Online adalah sistem informasi pengelolaan bea perolehan hak atas tanah dan bangunan  untuk mendukung pelayanan.
         </p>
 
         <div
           class="flex flex-col sm:flex-row justify-center md:justify-start gap-3 pt-4"
         >
           <a
-            href="https://wa.me/6282116081198?text=Halo,%20saya%20ingin%20menjadwalkan%20demo%20aplikasi%20SMARTPBB."
+            href="https://wa.me/6282116081198?text=Halo,%20saya%20ingin%20menjadwalkan%20demo%20aplikasi%20BPHTB."
             target="_blank"
             class="bg-white text-[#0057B7] hover:bg-[#FAB715] hover:text-white font-semibold 
             px-6 py-2.5 rounded-2xl shadow-md transition-all duration-300 text-sm md:text-base"
@@ -74,7 +73,7 @@
           </a>
 
           <a
-            href="https://wa.me/6282116081198?text=Halo,%20saya%20ingin%20konsultasi%20gratis%20terkait%20aplikasi%20SMARTPBB."
+            href="https://wa.me/6282116081198?text=Halo,%20saya%20ingin%20konsultasi%20gratis%20terkait%20aplikasi%20BPHTB."
             target="_blank"
             class="border-2 border-white text-white hover:bg-[#FAB715] hover:border-[#FAB715] 
             font-semibold px-6 py-2.5 rounded-2xl transition-all duration-300 text-sm md:text-base"
@@ -133,26 +132,27 @@
         </div>
       </transition>
     </div>
-<logo/>
-   
+
+    <Logo/>
+
    <!-- DEMO VIDEO -->
 <section class="bg-gradient-to-b from-sky-50 to-white py-24" data-aos="fade-up">
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
     <div class="relative rounded-2xl overflow-hidden shadow-xl">
       <iframe
         class="w-full h-56 md:h-72"
-        src="https://www.youtube.com/embed/C0dXSRUHpSA"
-        title="Demo Smart PBB"
+        src="https://www.youtube.com/embed/ABCDEFHG"
+        title="Demo SIPPADU"
         frameborder="0"
         allowfullscreen
       ></iframe>
     </div>
 
     <div class="space-y-4 text-left">
-      <h2 class="text-5xl font-bold text-[#005787]">Demo Aplikasi Smart PBB</h2>
+      <h2 class="text-5xl font-bold text-[#005787]">Demo Aplikasi BPHTB Online</h2>
       <p class="text-[#005787] text-lg leading-relaxed">
-        SMART PBB dapat terintegrasi dengan Aplikasi BPHTB Online, Host To Host BPN dan Bank Daerah, dan Dashboard Real Time Pendapatan Asli Daerah (PAD). Kami siap membantu instansi dalam menangani pengelolaan dan pelayanan pajak daerah. Mari bermitra dengan kami. Jual aplikasi simpbb, sewa aplikasi simpbb, jasa pembuatan aplikasi simpbb hubungi kami.
-      </p>
+      Aplikasi ini mencakup mulai dari pembayaran, cara membayar pajak secara online, hingga pelaporan PPAT online. Kami siap membantu dinas pendapatan daerah untuk membangun dalam pengelolaan pajak.
+       </p>
     </div>
   </div>
 </section>
@@ -168,12 +168,11 @@
 
     <!-- Teks Deskripsi -->
     <p class="text-gray-600 text-lg text-center mb-12">
-      Berikut fitur yang terdapat pada aplikasi Smart PBB
+      Berikut fitur yang terdapat pada aplikasi BPHTB
     </p>
 
     <!-- Grid Fitur -->
     <div class="grid grid-cols-1 md:grid-cols-6 gap-12 items-start">
-      
       <!-- Kiri: List Fitur Utama -->
 <div class="md:col-span-2 flex flex-col space-y-6">
   <div
@@ -200,28 +199,23 @@
 
         <!-- Sublist Fitur -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-gray-500 text-left mt-2">
-          <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed">
-            <li>Pendataan</li>
-            <li>Penilaian</li>
-            <li>Penetapan</li>
-            <li>Penagihan</li>
-            <li>Pembayaran</li>
-          </ul>
+         <ul class="list-disc pl-6 space-y-2 text-gray-500 text-lg leading-relaxed">
+  <li>Halaman PPAT/ Notaris</li>
+  <li>Verifikasi dan Validasi Data : Daftar, Persyaratan, Informasi OP, Validasi SPPT</li>
+</ul>
 
-          <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed">
-            <li>Pelayanan</li>
-            <li>Lihat & Referensi</li>
-            <li>Kelola Informasi</li>
-            <li>Konfigurasi</li>
-            <li>Cetak SPPT</li>
-          </ul>
+<ul class="list-disc pl-6 space-y-2 text-gray-500 text-lg leading-relaxed">
+  <li>Pembayaran</li>
+  <li>Laporan</li>
+  <li>Kuisoner PPAT</li>
+</ul>
 
-          <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed">
-            <li>Integrasi Sistem Pembayaran Online</li>
-            <li>Integrasi dengan KSP</li>
-            <li>Modul Desa / Kecamatan</li>
-            <li>Dan fitur menarik lainnya</li>
-          </ul>
+<ul class="list-disc pl-6 space-y-2 text-gray-500 text-lg leading-relaxed">
+  <li>Notifikasi</li>
+  <li>Pelaporan : SPPD, Data Transaksi</li>
+  <li>dan fitur menarik lainnya.</li>
+</ul>
+
         </div>
       </div>
 
@@ -297,7 +291,7 @@
 </section>
 
 
-    <!-- PRODUK -->
+ <!-- PRODUK -->
   <div class="max-w-7xl mx-auto px-6 text-center">
     <h3 class="text-5xl font-bold text-[#005787] mb-4">Produk</h3>
     <p class="text-gray-600 text-lg mb-4">
@@ -393,12 +387,12 @@ import "aos/dist/aos.css";
 import { useRouter } from "vue-router";
 import Logo from "@/components/Logo.vue";
 
-const heroImage = new URL("@/assets/img/smartpbb.png", import.meta.url).href;
+const heroImage = new URL("@/assets/img/bpthb.png", import.meta.url).href;
 const router = useRouter();
 const getImgUrl = (name) =>
   new URL(`../assets/img/${name}`, import.meta.url).href;
 
-  // Pop-up chat
+// Pop-up chat
 const isOpen = ref(false);
 const toggleChat = () => (isOpen.value = !isOpen.value);
 
@@ -409,28 +403,28 @@ const whatsappLink = computed(() => {
   return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 });
 
-
 /* === FITUR === */
 const fitur = [
-  "Terintegrasi Dengan Modul Desa/Kecamatan",
-  "Tracking Layanan",
-  "Multi Integrasi Dengan Pihak Ke-3",
-  "Integrasi Pembayaran Online",
+  "Terintegrasi dengan BPN",
+  "Terintergrasi Dengan Bank Daerah",
+  "Pelaporan oleh Notaris / PPAT",
+  "Realtime Notifikasi",
 ];
 
-/* === SCREENSHOTS === */
+
 const screenshots = [
-  "smart.png",
-  "dashboard.png",
-  "penagihan.png",
-  "reservasi.png",
-  "verifkator.png",
-  "pelayanan-desa.png",
-  "persyaratan.png",
-  "tracking.png",
+  "I.png",
+  "II.png",
+  "III.png",
+  "IV.png",
+  "V.png",
+  "VI.png",
+  "VII.png",
+  "IX.png",
+ 
 ];
 
-/* === LIGHTBOX === */
+
 const lightboxVisible = ref(false);
 const currentIndexLightbox = ref(0);
 
@@ -449,7 +443,7 @@ const prevImage = () => {
     (currentIndexLightbox.value - 1 + screenshots.length) % screenshots.length;
 };
 
-/* === LOOP UNTUK SCROLL TAK TERBATAS === */
+
 const loopedScreenshots = computed(() => [...screenshots, ...screenshots]);
 const carousel = ref(null);
 
@@ -464,7 +458,7 @@ const handleScroll = () => {
   }
 };
 
-/* === SLIDER PRODUK HERO === */
+
 const slides = ref([
   {
     title: "SMART PBB",
@@ -495,7 +489,7 @@ const slides = ref([
 const currentSlide = ref(0);
 let slideInterval = null;
 
-/* === MOUNTED === */
+
 onMounted(() => {
   AOS.init({ duration: 900, once: true });
 
@@ -511,12 +505,10 @@ onMounted(() => {
 
 onBeforeUnmount(() => clearInterval(slideInterval));
 
-/* === SCROLL KE ATAS === */
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
-/* === NAVIGASI KE HALAMAN PRODUK === */
 const goTo = (path) => {
   if (router && path) router.push(path);
 };
@@ -524,7 +516,6 @@ const goTo = (path) => {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
-
 
 @keyframes fadeInUp {
   from {
@@ -540,14 +531,12 @@ const goTo = (path) => {
   animation: fadeInUp 1s ease-out;
 }
 
-/* Bentuk wave lebih rapi dan halus */
 .clip-wave {
   clip-path: path(
     "M0,300 C300,50 950,450 1550,250 L1550,900 L0,900 Z"
   );
 }
 
-/* Responsif tambahan agar wave tetap proporsional */
 @media (max-width: 768px) {
   .clip-wave {
     clip-path: path(
@@ -556,7 +545,6 @@ const goTo = (path) => {
   }
 }
 
-/* SEMBUNYIKAN SCROLLBAR */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
@@ -565,7 +553,6 @@ const goTo = (path) => {
   scrollbar-width: none;
 }
 
-/* ANIMASI FADE UNTUK LIGHTBOX */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -580,7 +567,6 @@ const goTo = (path) => {
   animation: fadeIn 0.3s ease-out;
 }
 
-/* ANIMASI LOGO BERJALAN */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -594,7 +580,7 @@ const goTo = (path) => {
   animation: scroll 40s linear infinite;
 }
 
-/* GRID 4-4 UNTUK SCREENSHOTS */
+
 .screenshot-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -602,7 +588,6 @@ const goTo = (path) => {
   justify-items: center;
 }
 
-/* 🔧 HAPUS ANIMASI OTOMATIS SCREENSHOT */
 .animate-carousel {
   display: flex;
   will-change: transform;

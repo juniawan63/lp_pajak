@@ -66,7 +66,7 @@
             class="group bg-white rounded-2xl shadow-md hover:shadow-lg transition-all border border-gray-100 hover:border-green-400 overflow-hidden flex flex-col h-full cursor-pointer"
           >
             <div class="bg-[#0057B7] p-6 flex justify-center items-center h-52">
-              <div class="bg-[#0057B7] flex justify-center items-center h-48 overflow-hidden">
+              <div class="bg-[#0057B7] flex justify-center items-center h-52 overflow-hidden">
                 <img
                   :src="product.img"
                   :alt="product.title"
@@ -139,15 +139,15 @@ const products = [
   {
     title: "Aplikasi Perpajakan Daerah",
     desc: "Aplikasi e-Tax pemerintah membantu pengelolaan pajak dan retribusi daerah secara digital, meningkatkan efisiensi dan transparansi.",
-    img: new URL("@/assets/img/banner.png", import.meta.url).href,
-    link: "/produk",
+    img: new URL("@/assets/icon/pajak.png", import.meta.url).href,
+    link: "/produk/pajak",
     features: ["BPHTB Online", "Dashboard Pajak Daerah", "SIPPADU", "SMART PBB"],
   },
   {
     title: "Integrasi API & Gateway",
     desc: "Integrasi antar sistem pemerintahan dan bank melalui API terstandar (REST, SOAP, OpenAPI).",
-    img:  new URL("@/assets/img/gateway.png", import.meta.url).href,
-    link: "/api-gateway",
+    img:  new URL("@/assets/icon/gateway.png", import.meta.url).href,
+    link: "/produk/api-gateway",
     features: [
       "API Gateway & Webhook",
       "OAuth2 & Token Authentication",
@@ -157,8 +157,8 @@ const products = [
   {
     title: "Host-to-Host dengan Bank",
     desc: "Bridging antara sistem pajak daerah dengan perbankan untuk pembayaran, verifikasi, dan rekonsiliasi otomatis.",
-    img: "https://cdn-icons-png.flaticon.com/512/9526/9526122.png",
-    link: "/host-to-host",
+    img:  new URL("@/assets/icon/hthb.png", import.meta.url).href,
+    link: "/produk/host-to-host",
     features: [
       "Koneksi SFTP & API Realtime",
       "Enkripsi & Sertifikasi Digital",
@@ -168,8 +168,8 @@ const products = [
   {
     title: "Keamanan & Kepatuhan",
     desc: "Menjamin keamanan transaksi dan kepatuhan terhadap regulasi perbankan dan pemerintahan.",
-    img: "https://cdn-icons-png.flaticon.com/512/747/747376.png",
-    link: "/security",
+    img:  new URL("@/assets/icon/security.png", import.meta.url).href,
+    link: "/produk/security",
     features: ["Enkripsi end-to-end", "Audit trail lengkap", "Sertifikasi & Compliance"],
   },
 ];

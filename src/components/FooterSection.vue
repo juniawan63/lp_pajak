@@ -53,9 +53,10 @@
           Berita Terbaru
         </h3>
         <ul class="space-y-6 text-[15px]">
+          <a href="https://www.sadigit.co.id/jasa-pembuatan-software-terpercaya-sadigit/" target="_blank" rel="noopener noreferrer">
           <li class="flex gap-3 group">
             <img
-              src="#"
+              src="/src/assets/img/aset.png"
               alt="Berita 1"
               class="w-20 h-16 object-cover rounded-md group-hover:scale-105 transition-transform duration-300"
             />
@@ -70,11 +71,12 @@
                 2025
               </p>
             </div>
-          </li>
-
+          </li></a>
+          
+          <a href="https://www.sadigit.co.id/pemanfaatan-ai-dalam-kehidupan-sehari-hari-transformasi-menuju-gaya-hidup-cerdas/" target="_blank" rel="noopener noreferrer">
           <li class="flex gap-3 group">
             <img
-              src="#"
+              src="/src/assets/img/aset (1).png"
               alt="Berita 2"
               class="w-20 h-16 object-cover rounded-md group-hover:scale-105 transition-transform duration-300"
             />
@@ -89,11 +91,12 @@
                 30, 2025
               </p>
             </div>
-          </li>
+          </li></a>
 
+          <a href="https://www.sadigit.co.id/produk-digital-terlaris-untuk-freelance-designer-di-2025/" target="_blank" rel="noopener noreferrer">
           <li class="flex gap-3 group">
             <img
-              src="#"
+              src="/src/assets/img/aset (2).png"
               alt="Berita 3"
               class="w-20 h-16 object-cover rounded-md group-hover:scale-105 transition-transform duration-300"
             />
@@ -108,7 +111,7 @@
                 29, 2025
               </p>
             </div>
-          </li>
+          </li></a>
         </ul>
       </div>
 

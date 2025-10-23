@@ -112,6 +112,7 @@
       </div>
     </section>
 
+    <Contact/>
     <!-- Footer -->
     <FooterSection />
   </div>
@@ -122,6 +123,7 @@ import { ref, computed } from "vue";
 import HeroSection from "@/components/HeroSection.vue";
 import FooterSection from "@/components/FooterSection.vue";
 import Logo from "@/components/Logo.vue";
+import Contact from "@/components/ContactSection.vue";
 
 // Pop-up chat
 const isOpen = ref(false);

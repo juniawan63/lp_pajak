@@ -16,7 +16,7 @@
     <h1
       class="block md:hidden text-2xl sm:text-3xl text-white font-extrabold text-center relative z-10 mt-14"
     >
-      BPHTB Online
+      Sistem Keamanan dan Kepatuhan
     </h1>
 
     <!-- Desktop -->
@@ -27,7 +27,7 @@
       <h1
         class="font-extrabold text-xl sm:text-4xl md:text-5xl text-[#005787] tracking-tight drop-shadow-sm"
       >
-        BPHTB Online
+        Sistem Keamanan dan Kepatuhan
       </h1>
     </div>
 
@@ -57,7 +57,9 @@
         <p
           class="text-gray-100 text-lg md:text-xl leading-relaxed max-w-md md:max-w-lg drop-shadow-sm"
         >
-         Aplikasi BPHTB Online adalah sistem informasi pengelolaan bea perolehan hak atas tanah dan bangunan  untuk mendukung pelayanan.
+        Fitur Host-to-Host menghubungkan sistem pajak daerah langsung ke sistem perbankan untuk pembayaran, verifikasi,
+        dan rekonsiliasi otomatis secara real-time, memastikan transaksi cepat dan akurat. Teknologi ini didukung oleh SFTP & API realtime,
+        enkripsi & sertifikasi digital, serta rekonsiliasi otomatis, dan dirancang agar aman, efisien, dan sesuai standar perbankan nasional.
         </p>
 
         <div
@@ -85,143 +87,91 @@
     </div>
   </section>
 
-    <!-- Tombol WhatsApp -->
-    <div>
-      <button
-        @click="toggleChat"
-      class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full flex items-center shadow-lg gap-2 transition-all z-50"
-      >
-        <i class="fab fa-whatsapp text-xl"></i>
-        <span class="hidden md:inline">Halo, bisa kami bantu...?</span>
-      </button>
-
-      <!-- Popup Chat -->
-      <transition name="fade">
-        <div
-          v-if="isOpen"
-          class="fixed bottom-20 right-6 bg-white rounded-xl shadow-2xl w-72 overflow-hidden border border-gray-200 z-50"
-        >
-           <div class="bg-green-500 text-white p-3 flex justify-between items-center">
-            <p class="text-sm font-medium">Tim kami siap membantu Anda</p>
-            <button
-              @click="toggleChat"
-              class="text-white hover:text-gray-200 transition"
-              aria-label="Tutup chat"
-            >
-              ✕
-            </button>
-          </div>
-
-          <a
-            :href="whatsappLink"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="p-4 flex items-center gap-3 hover:bg-blue-50 transition-colors"
-          >
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png"
-              alt="Admin"
-              class="w-12 h-12 rounded-full object-cover flex-shrink-0"
-            />
-           <div class="flex-1 text-left">
-              <h3 class="font-semibold text-gray-800 leading-tight">Admin</h3>
-              <p class="text-sm text-gray-500 -mt-0.5">Tim Pajak Online</p>
-              <p class="text-xs text-green-500 font-medium mt-1">Online Sekarang</p>
-            </div>
-          </a>
-        </div>
-      </transition>
-    </div>
-
+    <WhatsApp/>
+    
     <Logo/>
 
    <!-- DEMO VIDEO -->
-<section class="bg-gradient-to-b from-sky-50 to-white py-24" data-aos="fade-up">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-    <div class="relative rounded-2xl overflow-hidden shadow-xl">
-      <iframe
-        class="w-full h-56 md:h-72"
-        src="https://www.youtube.com/embed/ABCDEFHG"
-        title="Demo SIPPADU"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-    </div>
+    <section class="bg-gradient-to-b from-sky-50 to-white py-24" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+        <div class="relative rounded-2xl overflow-hidden shadow-xl">
+          <iframe
+            class="w-full h-56 md:h-72"
+            src="https://www.youtube.com/embed/ABCDEFHG"
+            title="Demo HTHB"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
 
-    <div class="space-y-4 text-left">
-      <h2 class="text-5xl font-bold text-[#005787]">Demo Aplikasi BPHTB Online</h2>
-      <p class="text-[#005787] text-lg leading-relaxed">
-      Aplikasi ini mencakup mulai dari pembayaran, cara membayar pajak secara online, hingga pelaporan PPAT online. Kami siap membantu dinas pendapatan daerah untuk membangun dalam pengelolaan pajak.
-       </p>
-    </div>
-  </div>
-</section>
+        <div class="space-y-4 text-left">
+          <h2 class="text-5xl font-bold text-[#005787]">Demo Sistem Keamanan dan Kepatuhan</h2>
+          <p class="text-[#005787] text-lg leading-relaxed">
+          Solusi ini dirancang untuk memastikan keamanan data dan kepatuhan terhadap regulasi dalam setiap transaksi digital. Dengan dukungan enkripsi berlapis, otentikasi terpusat, dan audit trail otomatis, sistem ini menjaga seluruh proses tetap aman, terpercaya, dan sesuai standar nasional.
+          Kami berkomitmen membantu instansi pemerintah dan lembaga keuangan dalam meningkatkan keandalan serta perlindungan informasi.
+          </p>
+        </div>
+      </div>
+    </section>
 
 
     <!-- FITUR UTAMA -->
-<section class="bg-gradient-to-t from-sky-50 to-white py-24" data-aos="fade-up">
-  <div class="max-w-7xl mx-auto px-6">
-    <!-- Judul Besar -->
-    <h2 class="text-5xl font-bold text-[#005787] text-center mb-3">
-      Fitur 
-    </h2>
+    <section class="bg-gradient-to-t from-sky-50 to-white py-24" data-aos="fade-up">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Judul Besar -->
+        <h2 class="text-5xl font-bold text-[#005787] text-center mb-3">
+          Fitur 
+        </h2>
 
-    <!-- Teks Deskripsi -->
-    <p class="text-gray-600 text-lg text-center mb-12">
-      Berikut fitur yang terdapat pada aplikasi BPHTB
-    </p>
+        <!-- Teks Deskripsi -->
+        <p class="text-gray-600 text-lg text-center mb-12">
+          Berikut fitur yang terdapat pada Sistem Keamanan dan Kepatuhan
+        </p>
 
-    <!-- Grid Fitur -->
-    <div class="grid grid-cols-1 md:grid-cols-6 gap-12 items-start">
-      <!-- Kiri: List Fitur Utama -->
-<div class="md:col-span-2 flex flex-col space-y-6">
-  <div
-    v-for="(f, i) in fitur"
-    :key="i"
-    class="py-8 px-5 rounded-xl font-semibold leading-snug w-full text-left transition-transform hover:-translate-y-3 flex items-center justify-start h-28 shadow-sm bg-[#005787] text-white"
-  >
-    <h3 class="text-lg">{{ f }}</h3>
-  </div>
-</div>
+        <!-- Grid Fitur -->
+        <div class="grid grid-cols-1 md:grid-cols-6 gap-12 items-start">
+          <!-- Kiri: List Fitur Utama -->
+          <div class="md:col-span-2 flex flex-col space-y-6">
+          <div
+            v-for="(f, i) in fitur"
+              :key="i"
+              class="py-8 px-5 rounded-xl font-semibold leading-snug w-full text-left transition-transform hover:-translate-y-3 flex items-center justify-start h-28 shadow-sm bg-[#005787] text-white">
+            <h3 class="text-lg">{{ f }}</h3>
+            </div>
+          </div>
+          <!-- Kanan: Ilustrasi + Sublist -->
+          <div class="md:col-span-4 space-y-8">
+            <div
+              class="relative -mx-6 bg-green-50 py-2 flex justify-center items-center rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-500">
+              <img
+                :src="getImgUrl('pbb-fitur.png')"
+                alt="Ilustrasi Fitur"
+                class="w-full max-w-[260px] md:max-w-[320px] rounded-2xl hover:scale-105 transition-transform duration-500"
+              />
+            </div>
 
+            <!-- Sublist Fitur -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-gray-500 text-left mt-2">
+            <ul class="list-disc pl-6 space-y-2 text-gray-500 text-lg leading-relaxed">
+                <li>Statistik pemanggilan API dan status server integrasi.</li>
+                <li>Koleksi endpoint API (Publik & Internal).</li>
+                <li>Dokumentasi interaktif (Swagger / Postman).</li>
+              </ul>
 
-    <!-- Kanan: Ilustrasi + Sublist -->
-<div class="md:col-span-4 space-y-8">
-  <div
-    class="relative -mx-6 bg-green-50 py-2 flex justify-center items-center rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-500"
-  >
-    <img
-      :src="getImgUrl('pbb-fitur.png')"
-      alt="Ilustrasi Fitur"
-      class="w-full max-w-[260px] md:max-w-[320px] rounded-2xl hover:scale-105 transition-transform duration-500"
-    />
-  </div>
-
-        <!-- Sublist Fitur -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-gray-500 text-left mt-2">
-         <ul class="list-disc pl-6 space-y-2 text-gray-500 text-lg leading-relaxed">
-  <li>Halaman PPAT/ Notaris</li>
-  <li>Verifikasi dan Validasi Data : Daftar, Persyaratan, Informasi OP, Validasi SPPT</li>
-</ul>
-
-<ul class="list-disc pl-6 space-y-2 text-gray-500 text-lg leading-relaxed">
-  <li>Pembayaran</li>
-  <li>Laporan</li>
-  <li>Kuisoner PPAT</li>
-</ul>
-
-<ul class="list-disc pl-6 space-y-2 text-gray-500 text-lg leading-relaxed">
-  <li>Notifikasi</li>
-  <li>Pelaporan : SPPD, Data Transaksi</li>
-  <li>dan fitur menarik lainnya.</li>
-</ul>
-
+              <ul class="list-disc pl-6 space-y-2 text-gray-500 text-lg leading-relaxed">
+                <li>Buat, ubah, dan hapus API key untuk tiap pengguna/instansi.</li>
+                <li>Lihat permintaan masuk (request), error, dan waktu respons.</li>
+                
+              </ul>
+              <ul class="list-disc pl-6 space-y-2 text-gray-500 text-lg leading-relaxed">
+                <li>Pengaturan koneksi antar sistem (misal: E-PBB, SIPPADU, SIAPDOL, BPN).</li>
+                <li>Statistik uptime, response time, dan trafik bulanan.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- SCREENSHOTS -->
     <section
@@ -375,9 +325,9 @@
         ></button>
       </div>
     </div>
-</section>
-
-
+  </section>
+  <Contact/>
+  <Footer/>
 </template>
 
 <script setup>
@@ -386,29 +336,24 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useRouter } from "vue-router";
 import Logo from "@/components/Logo.vue";
+import Contact from "@/components/ContactSection.vue";
+import WhatsApp from "@/components/WhatsApp.vue";
+import Footer from "@/components/FooterSection.vue";
 
 const heroImage = new URL("@/assets/img/bpthb.png", import.meta.url).href;
 const router = useRouter();
 const getImgUrl = (name) =>
   new URL(`../assets/img/${name}`, import.meta.url).href;
 
-// Pop-up chat
-const isOpen = ref(false);
-const toggleChat = () => (isOpen.value = !isOpen.value);
-
-// WhatsApp
-const phoneNumber = "6282116081198";
-const message = "Halo kak, saya ingin bertanya tentang aplikasi perpajakan.";
-const whatsappLink = computed(() => {
-  return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-});
 
 /* === FITUR === */
 const fitur = [
-  "Terintegrasi dengan BPN",
-  "Terintergrasi Dengan Bank Daerah",
-  "Pelaporan oleh Notaris / PPAT",
-  "Realtime Notifikasi",
+  "Dashboard API Gateway",
+  "Daftar API & Dokumentasi",
+  "Manajemen Kunci API (API Key Management)",
+  "Monitoring & Log Request",
+  "Integrasi Aplikasi Eksternal",
+  "Laporan Kinerja API",
 ];
 
 

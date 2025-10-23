@@ -88,7 +88,7 @@
   </section>
 
     <WhatsApp/>
-
+    
     <Logo/>
 
    <!-- DEMO VIDEO -->
@@ -98,16 +98,17 @@
           <iframe
             class="w-full h-56 md:h-72"
             src="https://www.youtube.com/embed/ABCDEFHG"
-            title="Demo SIPPADU"
+            title="Demo HTHB"
             frameborder="0"
             allowfullscreen
           ></iframe>
         </div>
 
         <div class="space-y-4 text-left">
-          <h2 class="text-5xl font-bold text-[#005787]">Demo Aplikasi BPHTB Online</h2>
+          <h2 class="text-5xl font-bold text-[#005787]">Demo Aplikasi HTHB (Host to Host Bank)</h2>
           <p class="text-[#005787] text-lg leading-relaxed">
-          Aplikasi ini mencakup mulai dari pembayaran, cara membayar pajak secara online, hingga pelaporan PPAT online. Kami siap membantu dinas pendapatan daerah untuk membangun dalam pengelolaan pajak.
+          Aplikasi ini mencakup integrasi sistem pembayaran pajak daerah secara langsung dengan bank mitra melalui koneksi Host to Host. Dengan sistem ini, proses pembayaran, verifikasi, hingga pelaporan transaksi pajak menjadi lebih cepat, akurat, dan transparan.
+          Kami membantu dinas pendapatan daerah dalam membangun ekosistem digital yang efisien untuk pengelolaan pajak berbasis perbankan.
           </p>
         </div>
       </div>
@@ -124,7 +125,7 @@
 
         <!-- Teks Deskripsi -->
         <p class="text-gray-600 text-lg text-center mb-12">
-          Berikut fitur yang terdapat pada aplikasi BPHTB
+          Berikut fitur yang terdapat pada Host to Host dengan Bank
         </p>
 
         <!-- Grid Fitur -->
@@ -152,20 +153,21 @@
             <!-- Sublist Fitur -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-gray-500 text-left mt-2">
             <ul class="list-disc pl-6 space-y-2 text-gray-500 text-lg leading-relaxed">
-                <li>Halaman PPAT/ Notaris</li>
-                <li>Verifikasi dan Validasi Data : Daftar, Persyaratan, Informasi OP, Validasi SPPT</li>
+                <li>Tampilan ringkasan transaksi antar bank dan sistem pajak.</li>
+                <li>Status koneksi, log aktivitas, dan statistik penerimaan.</li>
+                <li>Grafik penerimaan realtime dan histori pelaporan.</li>
               </ul>
 
               <ul class="list-disc pl-6 space-y-2 text-gray-500 text-lg leading-relaxed">
-                <li>Pembayaran</li>
-                <li>Laporan</li>
-                <li>Kuisoner PPAT</li>
+                <li>Monitoring status koneksi (aktif/nonaktif).</li>
+                <li>Riwayat transaksi otomatis dari bank.</li>
+                <li>Detail penerimaan pajak dan status verifikasi.</li>
               </ul>
 
               <ul class="list-disc pl-6 space-y-2 text-gray-500 text-lg leading-relaxed">
-                <li>Notifikasi</li>
-                <li>Pelaporan : SPPD, Data Transaksi</li>
-                <li>dan fitur menarik lainnya.</li>
+                <li>Pencocokan data penerimaan antara sistem dan laporan bank.</li>
+                <li>Laporan perbedaan dan hasil sinkronisasi.</li>
+                <li>Rekap transaksi per periode, per bank, dan per jenis pajak.</li>
               </ul>
             </div>
           </div>
@@ -326,6 +328,8 @@
       </div>
     </div>
   </section>
+  <Contact/>
+  <Footer/>
 </template>
 
 <script setup>
@@ -334,7 +338,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useRouter } from "vue-router";
 import Logo from "@/components/Logo.vue";
+import Contact from "@/components/ContactSection.vue";
 import WhatsApp from "@/components/WhatsApp.vue";
+import Footer from "@/components/FooterSection.vue";
 
 const heroImage = new URL("@/assets/img/bpthb.png", import.meta.url).href;
 const router = useRouter();
@@ -344,10 +350,11 @@ const getImgUrl = (name) =>
 
 /* === FITUR === */
 const fitur = [
-  "Terintegrasi dengan BPN",
-  "Terintergrasi Dengan Bank Daerah",
-  "Pelaporan oleh Notaris / PPAT",
-  "Realtime Notifikasi",
+  "Dashboard Host to Host",
+  "Manajemen Koneksi Bank",
+  "Transaksi Realtime",
+  "Rekonsiliasi Otomatis",
+  "Laporan & Analitik",
 ];
 
 

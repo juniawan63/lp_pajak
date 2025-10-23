@@ -43,7 +43,10 @@ import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 import bapendaSmd from "@/assets/img/logo-bapenda-sumedang.png";
 import bapendaButon from "@/assets/img/butonutara.png";
 import bpkadSeluma from "@/assets/img/bpkad.png";
-
+import bankBjbSumedang from "@/assets/icon/bank (1).png";
+import bankSulman from "@/assets/icon/bank (2).png";
+import bankSultra from "@/assets/icon/bank (3).png";
+import bankSulselbar from "@/assets/icon/bank (4).png";
 // Data instansi
 const clients = [
   {
@@ -62,20 +65,26 @@ const clients = [
     desc: "BPKAD Seluma Bengkulu menggunakan Sagidit Financial Dashboard untuk memantau arus keuangan daerah secara transparan.",
   },
   {
-    img: bapendaSmd,
-    name: "Bapenda Kabupaten Sumedang 2",
-    desc: "Bapenda Sumedang memanfaatkan layanan Sagidit untuk membangun sistem e-PBB dan dashboard pajak daerah yang terintegrasi.",
+  img: bankBjbSumedang,
+  name: "Bank BJB Cabang Sumedang",
+  desc: "BJB Sumedang berkolaborasi dengan Sagidit dalam pengembangan sistem Host to Host pajak daerah, memastikan transaksi berjalan aman dan realtime.",
   },
   {
-    img: bapendaButon,
-    name: "Bapenda Kabupaten Buton Utara 2",
-    desc: "Dengan dukungan Sagidit, Bapenda Buton Utara berhasil mengimplementasikan sistem digital manajemen pajak daerah.",
+    img: bankSultra,
+    name: "Bank Sulawesi Utara",
+    desc: "Dengan integrasi Sagidit, Bank Sulawesi Utara kini memiliki sistem pelaporan pajak daerah yang lebih cepat dan efisien melalui koneksi digital langsung.",
   },
   {
-    img: bpkadSeluma,
-    name: "BPKAD Kabupaten Seluma Bengkulu 2",
-    desc: "BPKAD Seluma Bengkulu menggunakan Sagidit Financial Dashboard untuk memantau arus keuangan daerah secara transparan.",
+    img: bankSulman,
+    name: "Bank Sulawesi Mandiri",
+    desc: "Bank Sulawesi Mandiri memanfaatkan platform Sagidit untuk mendukung transparansi penerimaan pajak daerah dengan sistem otomasi transaksi yang handal.",
   },
+  {
+    img: bankSulselbar,
+    name: "Bank Sulawesi Selatan dan Barat",
+    desc: "Bersama Sagidit, Bank Sulawesi Selatan dan Barat sukses mengimplementasikan konektivitas API dan sistem keamanan transaksi untuk pengelolaan pajak daerah yang modern.",
+  },
+
 ];
 
 const groupSize = 3;

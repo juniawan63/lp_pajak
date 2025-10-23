@@ -85,117 +85,70 @@
     </div>
   </section>
 
-    <!-- Tombol WhatsApp -->
-    <div>
-      <button
-        @click="toggleChat"
-      class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full flex items-center shadow-lg gap-2 transition-all z-50"
-      >
-        <i class="fab fa-whatsapp text-xl"></i>
-        <span class="hidden md:inline">Halo, bisa kami bantu...?</span>
-      </button>
-
-      <!-- Popup Chat -->
-      <transition name="fade">
-        <div
-          v-if="isOpen"
-          class="fixed bottom-20 right-6 bg-white rounded-xl shadow-2xl w-72 overflow-hidden border border-gray-200 z-50"
-        >
-           <div class="bg-green-500 text-white p-3 flex justify-between items-center">
-            <p class="text-sm font-medium">Tim kami siap membantu Anda</p>
-            <button
-              @click="toggleChat"
-              class="text-white hover:text-gray-200 transition"
-              aria-label="Tutup chat"
-            >
-              ✕
-            </button>
-          </div>
-
-          <a
-            :href="whatsappLink"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="p-4 flex items-center gap-3 hover:bg-blue-50 transition-colors"
-          >
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png"
-              alt="Admin"
-              class="w-12 h-12 rounded-full object-cover flex-shrink-0"
-            />
-           <div class="flex-1 text-left">
-              <h3 class="font-semibold text-gray-800 leading-tight">Admin</h3>
-              <p class="text-sm text-gray-500 -mt-0.5">Tim Pajak Online</p>
-              <p class="text-xs text-green-500 font-medium mt-1">Online Sekarang</p>
-            </div>
-          </a>
-        </div>
-      </transition>
-    </div>
-<logo/>
-   
-   <!-- DEMO VIDEO -->
-<section class="bg-gradient-to-b from-sky-50 to-white py-24" data-aos="fade-up">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-    <div class="relative rounded-2xl overflow-hidden shadow-xl">
-      <iframe
-        class="w-full h-56 md:h-72"
-        src="https://www.youtube.com/embed/C0dXSRUHpSA"
-        title="Demo Smart PBB"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-    </div>
-
-    <div class="space-y-4 text-left">
-      <h2 class="text-5xl font-bold text-[#005787]">Demo Aplikasi Smart PBB</h2>
-      <p class="text-[#005787] text-lg leading-relaxed">
-        SMART PBB dapat terintegrasi dengan Aplikasi BPHTB Online, Host To Host BPN dan Bank Daerah, dan Dashboard Real Time Pendapatan Asli Daerah (PAD). Kami siap membantu instansi dalam menangani pengelolaan dan pelayanan pajak daerah. Mari bermitra dengan kami. Jual aplikasi simpbb, sewa aplikasi simpbb, jasa pembuatan aplikasi simpbb hubungi kami.
-      </p>
-    </div>
-  </div>
-</section>
-
-
-    <!-- FITUR UTAMA -->
-<section class="bg-gradient-to-t from-sky-50 to-white py-24" data-aos="fade-up">
-  <div class="max-w-7xl mx-auto px-6">
-    <!-- Judul Besar -->
-    <h2 class="text-5xl font-bold text-[#005787] text-center mb-3">
-      Fitur 
-    </h2>
-
-    <!-- Teks Deskripsi -->
-    <p class="text-gray-600 text-lg text-center mb-12">
-      Berikut fitur yang terdapat pada aplikasi Smart PBB
-    </p>
-
-    <!-- Grid Fitur -->
-    <div class="grid grid-cols-1 md:grid-cols-6 gap-12 items-start">
+    <logo/>
       
-      <!-- Kiri: List Fitur Utama -->
-<div class="md:col-span-2 flex flex-col space-y-6">
-  <div
-    v-for="(f, i) in fitur"
-    :key="i"
-    class="py-8 px-5 rounded-xl font-semibold leading-snug w-full text-left transition-transform hover:-translate-y-3 flex items-center justify-start h-28 shadow-sm bg-[#005787] text-white"
-  >
-    <h3 class="text-lg">{{ f }}</h3>
-  </div>
-</div>
+      <!-- DEMO VIDEO -->
+    <section class="bg-gradient-to-b from-sky-50 to-white py-24" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+        <div class="relative rounded-2xl overflow-hidden shadow-xl">
+          <iframe
+            class="w-full h-56 md:h-72"
+            src="https://www.youtube.com/embed/C0dXSRUHpSA"
+            title="Demo Smart PBB"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="space-y-4 text-left">
+          <h2 class="text-5xl font-bold text-[#005787]">Demo Aplikasi Smart PBB</h2>
+          <p class="text-[#005787] text-lg leading-relaxed">
+            SMART PBB dapat terintegrasi dengan Aplikasi BPHTB Online, Host To Host BPN dan Bank Daerah, dan Dashboard Real Time Pendapatan Asli Daerah (PAD). Kami siap membantu instansi dalam menangani pengelolaan dan pelayanan pajak daerah. Mari bermitra dengan kami. Jual aplikasi simpbb, sewa aplikasi simpbb, jasa pembuatan aplikasi simpbb hubungi kami.
+          </p>
+        </div>
+      </div>
+    </section>
 
 
-    <!-- Kanan: Ilustrasi + Sublist -->
-<div class="md:col-span-4 space-y-8">
-  <div
-    class="relative -mx-6 bg-green-50 py-2 flex justify-center items-center rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-500"
-  >
-    <img
-      :src="getImgUrl('pbb-fitur.png')"
-      alt="Ilustrasi Fitur"
-      class="w-full max-w-[260px] md:max-w-[320px] rounded-2xl hover:scale-105 transition-transform duration-500"
-    />
-  </div>
+        <!-- FITUR UTAMA -->
+    <section class="bg-gradient-to-t from-sky-50 to-white py-24" data-aos="fade-up">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Judul Besar -->
+        <h2 class="text-5xl font-bold text-[#005787] text-center mb-3">
+          Fitur 
+        </h2>
+
+        <!-- Teks Deskripsi -->
+        <p class="text-gray-600 text-lg text-center mb-12">
+          Berikut fitur yang terdapat pada aplikasi Smart PBB
+        </p>
+
+        <!-- Grid Fitur -->
+        <div class="grid grid-cols-1 md:grid-cols-6 gap-12 items-start">
+          
+          <!-- Kiri: List Fitur Utama -->
+    <div class="md:col-span-2 flex flex-col space-y-6">
+      <div
+        v-for="(f, i) in fitur"
+        :key="i"
+        class="py-8 px-5 rounded-xl font-semibold leading-snug w-full text-left transition-transform hover:-translate-y-3 flex items-center justify-start h-28 shadow-sm bg-[#005787] text-white"
+      >
+        <h3 class="text-lg">{{ f }}</h3>
+      </div>
+    </div>
+
+
+        <!-- Kanan: Ilustrasi + Sublist -->
+    <div class="md:col-span-4 space-y-8">
+      <div
+        class="relative -mx-6 bg-green-50 py-2 flex justify-center items-center rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-500"
+      >
+        <img
+          :src="getImgUrl('pbb-fitur.png')"
+          alt="Ilustrasi Fitur"
+          class="w-full max-w-[260px] md:max-w-[320px] rounded-2xl hover:scale-105 transition-transform duration-500"
+        />
+      </div>
 
         <!-- Sublist Fitur -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-gray-500 text-left mt-2">
@@ -223,7 +176,6 @@
           </ul>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -381,8 +333,9 @@
       </div>
     </div>
 </section>
-
-
+    <Whatsapp/>
+    <Contact/>
+    <Footer/>
 </template>
 
 <script setup>
@@ -391,23 +344,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useRouter } from "vue-router";
 import Logo from "@/components/Logo.vue";
+import Whatsapp from "@/components/WhatsApp.vue";
+import Contact from "@/components/ContactSection.vue";
+import Footer from "@/components/FooterSection.vue";
 
 const heroImage = new URL("@/assets/img/smartpbb.png", import.meta.url).href;
 const router = useRouter();
 const getImgUrl = (name) =>
   new URL(`../assets/img/${name}`, import.meta.url).href;
-
-  // Pop-up chat
-const isOpen = ref(false);
-const toggleChat = () => (isOpen.value = !isOpen.value);
-
-// WhatsApp
-const phoneNumber = "6282116081198";
-const message = "Halo kak, saya ingin bertanya tentang aplikasi perpajakan.";
-const whatsappLink = computed(() => {
-  return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-});
-
 
 /* === FITUR === */
 const fitur = [
